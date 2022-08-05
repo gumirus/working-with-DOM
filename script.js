@@ -174,12 +174,3 @@ delModal.querySelector(".delete-modal__cancel-button").onclick = deleteCancel_cl
 delModal.querySelector(".delete-modal__confirm-button").onclick = deleteConfirm_click;
 let deleteTaskId; // ID текущей удаляемой задачи. Один на модальное окно.
 
-let switchMode = document.getElementById("switchMode");
-switchMode.onclick = function (){
-  let theme = document.getElementById("theme");
-  if( theme.getAttribute("href") == "light.css") {
-    theme.href = "dark.css";
-  } else {
-    theme.href = "light.css";
-  }
-}
